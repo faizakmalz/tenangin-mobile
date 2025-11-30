@@ -1,16 +1,44 @@
-# tenangin_mobile
+# tenangin-mobile
 
-A new Flutter project.
+Aplikasi Tenangin User, pengguna anonymous untuk konsultasi yang terjaga dan secure.
 
-## Getting Started
+## Quick Start
 
-This project is a starting point for a Flutter application.
+1. **Supabase Setup**
+    - Create account & project at [https://supabase.com](https://supabase.com).
+    - Copy project URL and anon/public API key.
+    - Match your Auth, Database, Storage setup/rules to the web.
+    - (Optional) Run/init your SQL schema in Supabase > SQL Editor.
+    - In the mobile repo, update your environment or config file with:
+      ```
+      SUPABASE_URL=your-project-url
+      SUPABASE_ANON_KEY=your-anon-key
+      # ...other Supabase settings as needed
+      ```
 
-A few resources to get you started if this is your first Flutter project:
+2. **Clone**
+    ```bash
+    git clone https://github.com/faizakmalz/tenangin-mobile.git
+    cd tenangin-mobile
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. **Install Dependencies**
+    pake VS Code/Android Studio (Dont forget FlutterSDK and AndroidSDK)
+    ```bash
+    flutter pub get
+    ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. **Setup Environment**
+    - Copy sample env/config to local:
+      ```bash
+      cp .env.example .env
+      ```
+    - Edit `.env` with Supabase keys and endpoints.
+
+5. **Run App**
+    ```bash
+    flutter run
+    # (or: run debugging (vscode))
+    ```
+
+---
